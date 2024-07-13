@@ -1,0 +1,53 @@
+.faceted-search-sidebar {
+  width: 350px;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-left: 1px solid #dee2e6;
+}
+
+.facet-category {
+  margin-bottom: 20px;
+}
+
+.facet-category h4 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.facet-category label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.facet-category select,
+.facet-category input {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+}
+
+.facet-category {
+  margin-bottom: 15px;
+}
+
+.category-title {
+  font-weight: bold;
+}
+
+.filter-option {
+  margin-left: 5px;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  /* margin-bottom: 5px; */
+}
+
+.option input[type="radio"],
+.option input[type="checkbox"] {
+  margin-right: 0px;
+}
+
