@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/artconnect/static/css/main.308f6f84.css",
-    "main.js": "/artconnect/static/js/main.d4b9998a.js",
-    "static/js/453.83b92315.chunk.js": "/artconnect/static/js/453.83b92315.chunk.js",
+    "main.js": "/artconnect/static/js/main.234f42ca.js",
+    "static/js/453.b0991327.chunk.js": "/artconnect/static/js/453.b0991327.chunk.js",
     "static/media/trendingArt1.png": "/artconnect/static/media/trendingArt1.c9333392179b361db432.png",
     "static/media/contemporaryArt3.png": "/artconnect/static/media/contemporaryArt3.d1c0f0a9f9fc970cda36.png",
     "static/media/artEvent2.png": "/artconnect/static/media/artEvent2.0b6a48d483fb621dcc55.png",
@@ -28,11 +28,11 @@
     "static/media/User.webp": "/artconnect/static/media/User.3474fd4513108bbb39e8.webp",
     "index.html": "/artconnect/index.html",
     "main.308f6f84.css.map": "/artconnect/static/css/main.308f6f84.css.map",
-    "main.d4b9998a.js.map": "/artconnect/static/js/main.d4b9998a.js.map",
-    "453.83b92315.chunk.js.map": "/artconnect/static/js/453.83b92315.chunk.js.map"
+    "main.234f42ca.js.map": "/artconnect/static/js/main.234f42ca.js.map",
+    "453.b0991327.chunk.js.map": "/artconnect/static/js/453.b0991327.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.308f6f84.css",
-    "static/js/main.d4b9998a.js"
+    "static/js/main.234f42ca.js"
   ]
 }
