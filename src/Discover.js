@@ -2,7 +2,7 @@ import React from 'react';
 import ArtCategory from './components/ArtCategory';
 import EventCategory from './components/EventCategory';
 import Search from './components/Search';
-import Filter from './components/Filter';
+import DiscoverFilter from './components/DiscoverFilter';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 
@@ -26,7 +26,7 @@ const Discover = () => {
                     <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div className="offcanvas-body">
-                    <Filter />
+                    <DiscoverFilter />
                 </div>
             </div>
 
