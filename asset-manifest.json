@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/artconnect/static/css/main.308f6f84.css",
+    "main.js": "/artconnect/static/js/main.234f42ca.js",
+    "static/js/453.b0991327.chunk.js": "/artconnect/static/js/453.b0991327.chunk.js",
+    "static/media/trendingArt1.png": "/artconnect/static/media/trendingArt1.c9333392179b361db432.png",
+    "static/media/contemporaryArt3.png": "/artconnect/static/media/contemporaryArt3.d1c0f0a9f9fc970cda36.png",
+    "static/media/artEvent2.png": "/artconnect/static/media/artEvent2.0b6a48d483fb621dcc55.png",
+    "static/media/contemporaryArt5.png": "/artconnect/static/media/contemporaryArt5.807cb8ccb2514aeca6c5.png",
+    "static/media/artEvent3.png": "/artconnect/static/media/artEvent3.f82b76a68ce6590d038d.png",
+    "static/media/artEvent1.png": "/artconnect/static/media/artEvent1.6a3b034307ce51ceeded.png",
+    "static/media/contemporaryArt2.png": "/artconnect/static/media/contemporaryArt2.d2c300d7e958bdef3bb3.png",
+    "static/media/artEvent4.png": "/artconnect/static/media/artEvent4.7f96171cca034641b6ca.png",
+    "static/media/contemporaryArt1.png": "/artconnect/static/media/contemporaryArt1.a6dd2062c21f7af42eda.png",
+    "static/media/contemporaryArt4.png": "/artconnect/static/media/contemporaryArt4.9e1b99429aa3983c6ae8.png",
+    "static/media/shopArt3.jpeg": "/artconnect/static/media/shopArt3.ae567e3f5bbe53765a47.jpeg",
+    "static/media/eventDetails.jpeg": "/artconnect/static/media/eventDetails.14f69e4b3518c319375e.jpeg",
+    "static/media/shopArt5.jpeg": "/artconnect/static/media/shopArt5.bcfcff2abc8517b275de.jpeg",
+    "static/media/shopArt2.jpeg": "/artconnect/static/media/shopArt2.53c012cb042606e8c495.jpeg",
+    "static/media/shopArt1.jpeg": "/artconnect/static/media/shopArt1.058147fa642ec4c17f3c.jpeg",
+    "static/media/communityDetails.jpeg": "/artconnect/static/media/communityDetails.9a018c76650d14bc8398.jpeg",
+    "static/media/shopArt4.jpeg": "/artconnect/static/media/shopArt4.8b4053df1d88e4e018dd.jpeg",
+    "static/media/artist.webp": "/artconnect/static/media/artist.c27983842acda58574cb.webp",
+    "static/media/ArtDisplay.webp": "/artconnect/static/media/ArtDisplay.547731c7fd3e09d8e287.webp",
+    "static/media/artEvent5.jpeg": "/artconnect/static/media/artEvent5.4773ecdbc82fc3cf24d6.jpeg",
+    "static/media/trendingArt3.jpg": "/artconnect/static/media/trendingArt3.5429ba2e87b95d05255e.jpg",
+    "static/media/trendingArt2.jpg": "/artconnect/static/media/trendingArt2.cef2bb95cfdc72e80ef9.jpg",
+    "static/media/User.webp": "/artconnect/static/media/User.3474fd4513108bbb39e8.webp",
+    "index.html": "/artconnect/index.html",
+    "main.308f6f84.css.map": "/artconnect/static/css/main.308f6f84.css.map",
+    "main.234f42ca.js.map": "/artconnect/static/js/main.234f42ca.js.map",
+    "453.b0991327.chunk.js.map": "/artconnect/static/js/453.b0991327.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.308f6f84.css",
+    "static/js/main.234f42ca.js"
+  ]
+}
