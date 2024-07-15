@@ -11,7 +11,7 @@ const CommunityDetails = () => {
 
             </div>
             <div className="d-flex justify-content-end tutorial">
-                <button className="btn btn-primary tutorial" style={{ paddingLeft: '20px', paddingRight: '20px', marginRight: '60px' }}>Join</button>
+                <button className="btn btn-primary tutorial" style={{ paddingLeft: '20px', paddingRight: '20px', marginRight: '60px' }}>Join This Community</button>
             </div>
 
             <hr style={{ color: 'black' }} />

@@ -3,6 +3,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Home from './Home';
 import Discover from './Discover';
+import FrenchDiscover from './French/FrenchDiscover';
 import EventDetails from './EventDetails';
 import Community from './Community';
 import CommunityDetails from './CommunityDetails';
@@ -12,6 +13,8 @@ import Profile from './Profile';
 import Art from './Art';
 import Artist from './Artist';
 import Navbar from './Navbar';
+import Cart from './Cart';
+import Error from './404Error';
 
 function App() {
   return (
@@ -21,14 +24,18 @@ function App() {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/discover" component={Discover} />
+          <Route path="/frenchDiscover" component={FrenchDiscover} />
           <Route path="/eventDetails" component={EventDetails} />
           <Route exact path="/community" component={Community} />
           <Route exact path="/communityDetails" component={CommunityDetails} />
           <Route exact path="/shop" component={Shop} />
           <Route exact path="/shopItemDetails" component={ShopItemDetails} />
+          <Route exact path="/cart" component={Cart} />
           <Route path="/art" component={Art} />
           <Route path="/artist" component={Artist} />
           <Route path="/profile" component={Profile} />
+
+          <Route path="/" component={Error} />
         </Switch>
       </Router>
     </div>

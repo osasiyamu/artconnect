@@ -17,14 +17,17 @@ const Navbar = () => {
             <li className="nav-item">
               <a className="nav-link" href="/artconnect/discover">Discover</a>
             </li>
+            <li className="nav-item">
+              <a className="nav-link" href="/artconnect/community">Community</a>
+            </li>
           </ul>
           <a className="navbar-brand mx-auto websiteName" href="/artconnect/">ArtConnect</a>
           <ul className="navbar-nav">
             <li className="nav-item">
-              <a className="nav-link" href="/artconnect/community">Community</a>
+              <a className="nav-link" href="/artconnect/shop">Shop</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/artconnect/shop">Shop</a>
+              <a className="nav-link" href="/artconnect/cart">My Cart</a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="/artconnect/profile"><i class="bi bi-person-fill"></i></a>

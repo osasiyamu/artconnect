@@ -9,7 +9,7 @@ const Shop = () => {
             <div className="fixed-top" style={{ marginLeft: '1rem', marginTop: '80px', marginBottom: '100px' }}>
                 <div className='d-flex justify-content-between align-items-center mt-3' style={{ marginLeft: '1rem', marginTop: '100px', marginBottom: '30px' }}>
                     <div className='flex-grow-1 SearchFilter'>
-                        <Search page='Shop' />
+                        <Search page='Shop' action='Search'/>
                     </div>
                     <a className="btn btn-primary align-item-end" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample" style={{ marginRight: '20px' }}>
                         <i className="bi bi-funnel"></i>
