@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/artconnect/static/css/main.454bca07.css",
-    "main.js": "/artconnect/static/js/main.565d1ab7.js",
+    "main.css": "/artconnect/static/css/main.63fb2819.css",
+    "main.js": "/artconnect/static/js/main.d3d01f97.js",
     "static/js/453.b0991327.chunk.js": "/artconnect/static/js/453.b0991327.chunk.js",
     "static/media/trendingArt1.png": "/artconnect/static/media/trendingArt1.c9333392179b361db432.png",
     "static/media/contemporaryArt3.png": "/artconnect/static/media/contemporaryArt3.d1c0f0a9f9fc970cda36.png",
@@ -20,19 +20,20 @@
     "static/media/shopArt1.jpeg": "/artconnect/static/media/shopArt1.058147fa642ec4c17f3c.jpeg",
     "static/media/communityDetails.jpeg": "/artconnect/static/media/communityDetails.9a018c76650d14bc8398.jpeg",
     "static/media/shopArt4.jpeg": "/artconnect/static/media/shopArt4.8b4053df1d88e4e018dd.jpeg",
+    "static/media/blackart.jpeg": "/artconnect/static/media/blackart.3f8a3fbb0b7ccf8cad84.jpeg",
+    "static/media/profile.jpeg": "/artconnect/static/media/profile.e18a43fe6da89f738f06.jpeg",
     "static/media/artist.webp": "/artconnect/static/media/artist.c27983842acda58574cb.webp",
     "static/media/ArtDisplay.webp": "/artconnect/static/media/ArtDisplay.547731c7fd3e09d8e287.webp",
     "static/media/artEvent5.jpeg": "/artconnect/static/media/artEvent5.4773ecdbc82fc3cf24d6.jpeg",
     "static/media/trendingArt3.jpg": "/artconnect/static/media/trendingArt3.5429ba2e87b95d05255e.jpg",
     "static/media/trendingArt2.jpg": "/artconnect/static/media/trendingArt2.cef2bb95cfdc72e80ef9.jpg",
-    "static/media/User.webp": "/artconnect/static/media/User.3474fd4513108bbb39e8.webp",
     "index.html": "/artconnect/index.html",
-    "main.454bca07.css.map": "/artconnect/static/css/main.454bca07.css.map",
-    "main.565d1ab7.js.map": "/artconnect/static/js/main.565d1ab7.js.map",
+    "main.63fb2819.css.map": "/artconnect/static/css/main.63fb2819.css.map",
+    "main.d3d01f97.js.map": "/artconnect/static/js/main.d3d01f97.js.map",
     "453.b0991327.chunk.js.map": "/artconnect/static/js/453.b0991327.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.454bca07.css",
-    "static/js/main.565d1ab7.js"
+    "static/css/main.63fb2819.css",
+    "static/js/main.d3d01f97.js"
   ]
 }
