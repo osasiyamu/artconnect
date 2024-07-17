@@ -1,11 +1,13 @@
-import user from './images/User.webp';
+import profile from './images/profile.jpeg';
+import sunset from './images/blackart.jpeg';
+import UserPost from './components/UserPost';
 const Profile = () => {
     return (
         <div>
             <div className="d-flex " style={{ marginTop: '100px' }}>
-                <div className="artistProfile" style={{ backgroundColor: 'lightGrey' }}>
+                <div className="artistProfile" style={{ backgroundColor: 'lightGrey', border:'2px solid white', borderRadius: '10px'}}>
                     <div className="artistPicture">
-                        <img src={user} alt="userimg" />
+                        <img src={profile} alt="Profile picture" />
                     </div>
                     <div className="mt-3">
                         <p><a href=' ' className='ms-2 mt-5'>Username</a> <hr style={{ color: 'grey' }} /></p>
@@ -14,11 +16,26 @@ const Profile = () => {
                         <p><a href=' ' className="ms-2">Upload Art</a> <hr style={{ color: 'grey' }} /></p>
                         <p><a href=' ' className="ms-2">Settings</a></p>
                     </div>
-
                 </div>
 
-                <div className='profile align-content-center' style={{backgroundColor: 'white', border:'2px solid light-grey', height: '72vh', width: '72vw'}}>
-                    <h6 className="text-center" style={{color: 'black'}}>Coming Soon</h6>
+                <div className='profile' style={{border:'2px solid white', borderRadius: '10px', height: '80vh', width: '80vw'}}>
+                    {/* <h6 className="text-center" style={{color: 'black'}}>Coming Soon</h6> */}
+                    <div style={{border:'2px solid white', borderRadius: '10px', height: '32vh', width: '100%', marginBottom: '10px', alignContent: 'center', borderTopLeftRadius: '10px', borderTopRightRadius: '10px'}}>
+                        <img src={sunset} alt='Profile background picture' style={{height: '100%', width: '100%', borderTopLeftRadius: '10px', borderTopRightRadius: '10px'}}/>
+                    </div>
+
+                    <div className='ms-3' >
+                        <h6 style={{color: 'black', fontSize: '2.0rem', fontFamily: "'Lobster', cursive"}}>My Post</h6>
+                        <hr style={{color: 'black', marginBottom: '5px'}}></hr>
+                        <div style={{height: '38vh', overflowY: 'auto'}}>
+                            <UserPost number='1'/>
+                            <UserPost number='2'/>
+                            <UserPost number='3'/>
+                        </div>
+                    </div>
+                    
+
+
                 </div>
             </div>
 

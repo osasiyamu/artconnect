@@ -9,15 +9,20 @@ import 'bootstrap/dist/js/bootstrap.bundle.min';
 const Discover = () => {
     return (
         <div className='discover'>
-      <div className="fixed-top" style={{ marginTop: '80px' }}>
-        <div className='d-flex justify-content-between align-items-center mt-3' style={{ marginLeft: '1rem', marginTop: '100px', marginBottom: '30px' }}>
+      <div className="fixed-top" style={{ marginTop: '105px', marginLeft: '30px', maxWidth: '94%'}}>
+        {/* <div className='d-flex justify-content-between align-items-center mt-3' style={{ marginLeft: '1rem', marginTop: '100px', marginBottom: '30px' }}> */}
           <div className='flex-grow-1 SearchFilter'>
             <Search page='Découvrir' action='Recherche'/>
           </div>
-          <a className="btn btn-primary align-item-end" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample" style={{ marginRight: '20px' }}>
+          {/* <a className="btn btn-primary align-item-end" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample" style={{ marginRight: '20px' }}>
             <i className="bi bi-funnel"></i>
+          </a> */}
+        {/* </div> */}
+      </div>
+      <div className='fixed-top' style={{ display: 'flex', justifyContent: 'flex-end', marginTop: '160px', marginRight: '0px', marginBottom: '10px' }}>
+          <a className="btn btn-primary align-item-end" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample" style={{ marginRight: '20px' }} title="Filtrer">
+              <i className="bi bi-funnel"></i>
           </a>
-        </div>
       </div>
 
       <div className="offcanvas offcanvas-end" tabIndex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
@@ -38,7 +43,7 @@ const Discover = () => {
         <EventCategory category='Événement'  details='Détails'/>
       </div>
 
-      <div className="fixed-bottom" style={{ display: 'flex', justifyContent: 'flex-end', marginRight: '10px', marginBottom: '10px' }}>
+      <div className="fixed-bottom" style={{ display: 'flex', justifyContent: 'flex-end', marginRight: '15px', marginBottom: '10px' }}>
         <div style={{ maxHeight: '100px' }}>
           <div className="collapse collapse-horizontal" id="languages">
             <div className="card " style={{ width: '120px', padding: '0px', alignItems: 'start' }}>
@@ -50,7 +55,7 @@ const Discover = () => {
           </div>
         </div>
 
-        <a className="btn btn-primary align-item-end" type="button" data-bs-toggle="collapse" href="#languages" role="button" aria-expanded="false" aria-controls="languages" style={{ borderRadius: '50%', width: '50px', height: '50px', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+        <a className="btn btn-primary align-item-end" type="button" data-bs-toggle="collapse" href="#languages" role="button" aria-expanded="false" aria-controls="languages" style={{ borderRadius: '50%', width: '50px', height: '50px', display: 'flex', justifyContent: 'center', alignItems: 'center' }} title="Langages">
           <i className="bi bi-globe-americas"></i>
         </a>
       </div>

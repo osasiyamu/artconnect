@@ -186,6 +186,12 @@ a {
     /* Matches the track color to give the thumb a rounded effect */
 }
 
+.offcanvas-title {
+    font-weight: bolder;
+    font-size: 1.8rem;
+    font-family: 'Lobster', cursive;
+}
+
 /*Home*/
 .container.home {
     margin-top: 90px;
@@ -195,8 +201,8 @@ a {
     color: black;
     font-family: 'Lobster', cursive;
     font-size: 3rem;
-    margin-top: 100px;
-    margin-bottom: 70px;
+    margin-top: 90px;
+    margin-bottom: 50px;
 }
 
 .trendingArt {
@@ -494,3 +500,76 @@ a {
     font-family: 'Lobster', cursive;
     font-size: 8rem;
 }
+
+/*Cart*/
+.container.cart-page {
+    padding: 20px;
+  }
+  
+  .cart-items {
+    margin-bottom: 20px;
+  }
+  
+  .cart-item {
+    margin-bottom: 20px;
+  }
+  
+  .card {
+    background-color: #f8f8f8;
+    border-radius: 10px;
+  }
+  
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .quantity-input {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .quantity-input label {
+    margin-right: 10px;
+  }
+  
+  .quantity-input input {
+    width: 50px;
+  }
+  
+  .cart-summary {
+    text-align: right;
+    margin-top: 20px;
+  }
+  
+  .cart-actions button {
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .cart-actions .btn-secondary {
+    background-color: #6c757d;
+    color: white;
+  }
+  
+  .cart-actions .btn-primary {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .cart-actions .btn-danger {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  .cart-actions .btn-secondary:hover,
+  .cart-actions .btn-primary:hover,
+  .cart-actions .btn-danger:hover {
+    opacity: 0.8;
+  }
+  
