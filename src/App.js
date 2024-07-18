@@ -15,6 +15,9 @@ import Artist from './Artist';
 import Navbar from './Navbar';
 import Cart from './Cart';
 import Error from './404Error';
+import UserArts from './Profile/UserArts';
+import UserEvents from './Profile/UserEvents';
+import UserUploadArt from './Profile/UserUploadArt';
 
 function App() {
   return (
@@ -34,6 +37,9 @@ function App() {
           <Route path="/art" component={Art} />
           <Route path="/artist" component={Artist} />
           <Route path="/profile" component={Profile} />
+          <Route exact path="/userArts" component={UserArts} />
+          <Route exact path="/userEvents" component={UserEvents} />
+          <Route exact path="/userUploadArt" component={UserUploadArt} />
 
           <Route path="/" component={Error} />
         </Switch>
