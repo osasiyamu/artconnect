@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/artconnect/static/css/main.63fb2819.css",
-    "main.js": "/artconnect/static/js/main.d3d01f97.js",
+    "main.css": "/artconnect/static/css/main.28b38282.css",
+    "main.js": "/artconnect/static/js/main.dbbc666b.js",
     "static/js/453.b0991327.chunk.js": "/artconnect/static/js/453.b0991327.chunk.js",
     "static/media/trendingArt1.png": "/artconnect/static/media/trendingArt1.c9333392179b361db432.png",
     "static/media/contemporaryArt3.png": "/artconnect/static/media/contemporaryArt3.d1c0f0a9f9fc970cda36.png",
@@ -18,6 +18,7 @@
     "static/media/shopArt5.jpeg": "/artconnect/static/media/shopArt5.bcfcff2abc8517b275de.jpeg",
     "static/media/shopArt2.jpeg": "/artconnect/static/media/shopArt2.53c012cb042606e8c495.jpeg",
     "static/media/shopArt1.jpeg": "/artconnect/static/media/shopArt1.058147fa642ec4c17f3c.jpeg",
+    "static/media/abstract.jpeg": "/artconnect/static/media/abstract.12e34c74396e33ceba36.jpeg",
     "static/media/communityDetails.jpeg": "/artconnect/static/media/communityDetails.9a018c76650d14bc8398.jpeg",
     "static/media/shopArt4.jpeg": "/artconnect/static/media/shopArt4.8b4053df1d88e4e018dd.jpeg",
     "static/media/blackart.jpeg": "/artconnect/static/media/blackart.3f8a3fbb0b7ccf8cad84.jpeg",
@@ -28,12 +29,12 @@
     "static/media/trendingArt3.jpg": "/artconnect/static/media/trendingArt3.5429ba2e87b95d05255e.jpg",
     "static/media/trendingArt2.jpg": "/artconnect/static/media/trendingArt2.cef2bb95cfdc72e80ef9.jpg",
     "index.html": "/artconnect/index.html",
-    "main.63fb2819.css.map": "/artconnect/static/css/main.63fb2819.css.map",
-    "main.d3d01f97.js.map": "/artconnect/static/js/main.d3d01f97.js.map",
+    "main.28b38282.css.map": "/artconnect/static/css/main.28b38282.css.map",
+    "main.dbbc666b.js.map": "/artconnect/static/js/main.dbbc666b.js.map",
     "453.b0991327.chunk.js.map": "/artconnect/static/js/453.b0991327.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.63fb2819.css",
-    "static/js/main.d3d01f97.js"
+    "static/css/main.28b38282.css",
+    "static/js/main.dbbc666b.js"
   ]
 }
