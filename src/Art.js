@@ -1,7 +1,9 @@
+import Navbar from './Navbar';
 import ArtDisplay from './images/ArtDisplay.webp'
 const Art = () => {
     return (
         <div>
+            <Navbar />
             <p style={{ marginLeft: '3rem', marginTop: '80px', color: 'black' }}><a href='/artconnect/discover'>Discover</a> / <a href='/artconnect/art'>ContemporaryArt</a></p>
             <div className="d-flex ">
                 <div className="specificArt">

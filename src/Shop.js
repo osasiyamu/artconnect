@@ -2,10 +2,12 @@ import React from 'react';
 import ShopCategory from './components/ShopCategory'
 import Search from './components/Search'
 import ShopFilter from './components/ShopFilter';
+import Navbar from './Navbar';
 
 const Shop = () => {
     return (
         <div className='shop'>
+            <Navbar />
             <div className="fixed-top" style={{ marginTop: '105px', marginLeft: '30px', maxWidth: '94%'}}>
                 <div className='flex-grow-1 SearchFilter'>
                     <Search page='Shop' action='Search'/>

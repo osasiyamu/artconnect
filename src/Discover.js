@@ -5,10 +5,12 @@ import Search from './components/Search';
 import DiscoverFilter from './components/DiscoverFilter';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
+import Navbar from './Navbar';
 
 const Discover = () => {
     return (
         <div className='discover'>
+            <Navbar />
             <div className="fixed-top" style={{ marginTop: '105px', marginLeft: '30px', maxWidth: '94%' }}>
                 <div className='flex-grow-1 SearchFilter'>
                     <Search page='Discover' action='Search' />
