@@ -1,9 +1,11 @@
 import React from 'react';
 import CommunityCategory from './components/CommunityCategory'
 import DiscoverFilter from './components/DiscoverFilter';
+import Navbar from './Navbar';
 const SearchResult = () => {
     return ( 
         <div className='community'>
+            <Navbar />
             <div className='fixed-top' style={{ display: 'flex', justifyContent: 'flex-end', marginTop: '160px', marginRight: '0px', marginBottom: '10px' }}>
                 <a className="btn btn-primary align-item-end" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample" style={{ marginRight: '20px' }} title="Filter" aria-label="Filter">
                     <i className="bi bi-funnel" aria-hidden="true"></i>

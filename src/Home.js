@@ -3,10 +3,12 @@ import trendingArt1 from './images/trendingArt1.png';
 import trendingArt2 from './images/trendingArt2.jpg';
 import trendingArt3 from './images/trendingArt3.jpg';
 import './App.css';
+import Navbar from './Navbar';
 
 const Home = () => {
     return (
         <div className="container home">
+            <Navbar />
             <h1 className='text-center align-content-center slogan'>CREATE, CONNECT, INSPIRE</h1>
             <div className="row align-content-center justify-content-around">
                 <div className="col-md-3 mt-5">

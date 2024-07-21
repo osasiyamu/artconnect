@@ -1,9 +1,11 @@
 import artist from './images/artist.webp';
 import abstract from './images/abstract.jpeg';
 import UserPost from './components/UserPost';
+import Navbar from './Navbar';
 const Artist = () => {
     return (
         <div>
+            <Navbar />
             <p style={{ marginLeft: '3rem', marginTop: '80px', color: 'black' }}><a href='/artconnect/discover'>Discover</a> / <a href='/artconnect/art'>ContemporaryArt</a> / <a href='/artconnect/artist'>Artist Name</a></p>
             <div className="d-flex " style={{ marginTop: '0px' }}>
                 <div className="artistProfile" style={{ backgroundColor: 'lightGrey', border:'2px solid white', borderRadius: '10px'}}>

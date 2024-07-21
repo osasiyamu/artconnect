@@ -1,8 +1,10 @@
 import EventDetail from './images/eventDetails.jpeg'
 import SampleEventDetails from './components/SampleEventDetails';
+import Navbar from './Navbar';
 const EventDetails = () => {
     return (
         <div>
+            <Navbar />
             <p style={{ marginLeft: '3rem', marginTop: '80px', color: 'black' }}><a href='/artconnect/discover'>Discover</a> / <a href='/artconnect/eventDetails'>Event Details</a></p>
             <div className="">
                 <div className="communityDetails" style={{ width: '90%', height: '400px', color: 'black', marginLeft: '3rem', marginRight: '3rem' }}>

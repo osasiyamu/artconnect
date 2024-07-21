@@ -1,7 +1,9 @@
+import Navbar from './Navbar';
 import shopArt1 from './images/shopArt1.jpeg';
 const ShopItemDetails = () => {
     return (
         <div>
+            <Navbar />
             <p style={{ marginLeft: '3rem', marginTop: '80px', color: 'black' }}><a href='/artconnect/shop'>Shop</a> / <a href='/artconnect/shopItemDetails'>Item Details</a></p>
             <div className='row'>
                 <div className='col-4 shopDetails align-content-center' style={{color: 'black', backgroundColor: 'white', border:'3px solid black', borderBottom: '50px solid white', borderRadius: '', height: '60vh', width: '60vh', marginTop: '50px', marginLeft: '60px', paddingTop: '10px'}}>

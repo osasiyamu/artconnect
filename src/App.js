@@ -20,7 +20,6 @@ import Artist from './Artist';
 import ArtistArt from './Artist/ArtistArts';
 import ArtistEvents from './Artist/ArtistEvents';
 import ArtistLinks from './Artist/ArtistLinks';
-import Navbar from './Navbar';
 import Cart from './Cart';
 import CheckoutPage from './CheckoutPage';
 import Error from './404Error';
@@ -32,7 +31,6 @@ import UserSettings from './Profile/UserSettings';
 function App() {
   return (
     <div>
-      <Navbar />
       <Router basename='/artconnect'>
         <Switch>
           <Route exact path="/" component={Home} />
