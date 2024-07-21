@@ -22,7 +22,7 @@ const SamplePost = (props) => {
                                 </button>
                             </div>
                             <div class="modal-body text-center">
-                                <p>A post will be added in the working website</p><br></br>
+                                <p>You have added a post! (A post will be added in the working website)</p><br></br>
                                 <p>Also note that the text area for posting will not be available if the user is not in the community already. The rest of the UI stays the same however</p>
                             </div>
                         </div>

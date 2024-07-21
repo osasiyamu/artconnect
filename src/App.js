@@ -19,6 +19,7 @@ import TutorialFinal from './Tutorial/TutorialFinal';
 import Artist from './Artist';
 import ArtistArt from './Artist/ArtistArts';
 import ArtistEvents from './Artist/ArtistEvents';
+import ArtistLinks from './Artist/ArtistLinks';
 import Navbar from './Navbar';
 import Cart from './Cart';
 import CheckoutPage from './CheckoutPage';
@@ -53,6 +54,7 @@ function App() {
           <Route path="/artist" component={Artist} />
           <Route path="/artistArts" component={ArtistArt} />
           <Route path="/artistEvents" component={ArtistEvents} />
+          <Route path="/artistLinks" component={ArtistLinks} />
           <Route path="/profile" component={Profile} />
           <Route exact path="/userArts" component={UserArts} />
           <Route exact path="/userEvents" component={UserEvents} />

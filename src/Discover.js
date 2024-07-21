@@ -21,7 +21,7 @@ const Discover = () => {
                 </a>
             </div>
             
-            <div className="offcanvas offcanvas-end" tabIndex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+            <div className="offcanvas offcanvas-end" tabIndex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel" role="dialog">
                 <div className="offcanvas-header">
                     <h5 className="offcanvas-title" id="offcanvasExampleLabel">Filter By</h5>
                     <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -31,13 +31,13 @@ const Discover = () => {
                 </div>
             </div>
 
-            <div style={{ marginTop: '30px', marginBottom: '40px', paddingLeft: '30px' }}>
+            <main style={{ marginTop: '30px', marginBottom: '40px', paddingLeft: '30px' }}>
                 <ArtCategory category='Contemporary' details='Details' />
                 <ArtCategory category='Modern' details='Details' />
                 <ArtCategory category='Paintings' details='Details' />
                 <ArtCategory category='Sculpture' details='Details' />
                 <EventCategory category='Event' details='Details' />
-            </div>
+            </main>
 
             <div className="fixed-bottom" style={{ display: 'flex', justifyContent: 'flex-end', marginRight: '15px', marginBottom: '10px' }}>
                 <div style={{ maxHeight: '100px' }}>

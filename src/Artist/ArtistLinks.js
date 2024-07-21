@@ -1,7 +1,6 @@
 import artist from '../images/artist.webp';
 import abstract from '../images/abstract.jpeg';
-import EventCategory from '../components/EventCategory';
-const ArtistEvents = () => {
+const ArtistLinks = () => {
     return ( 
         <div>
             <p style={{ marginLeft: '3rem', marginTop: '80px', color: 'black' }}><a href='/artconnect/discover'>Discover</a> / <a href='/artconnect/art'>ContemporaryArt</a> / <a href='/artconnect/artist'>Artist Name</a></p>
@@ -24,10 +23,13 @@ const ArtistEvents = () => {
                     </div>
 
                     <div className='ms-3' >
-                        <h6 style={{color: 'black', fontSize: '2.0rem', fontFamily: "'Lobster', cursive"}}>Events</h6>
+                        <h6 style={{color: 'black', fontSize: '2.0rem', fontFamily: "'Lobster', cursive"}}>Links</h6>
                         <hr style={{color: 'black', marginBottom: '5px'}}></hr>
-                        <div style={{marginLeft: '-50px', marginTop: '-20px', height: '38.5vh', width: '80vw', overflowY: 'hidden', overflowX: 'hidden'}}>
-                            <EventCategory details='Details'/>
+                        <div style={{color: 'black', paddingLeft: '10px', paddingTop: '20px', height: '38.5vh', width: '80vw', overflowY: 'hidden', overflowX: 'hidden'}}>
+                            <p>Email: <a href="">sampleEmail@gmail.com</a><hr style={{ color: 'grey' }} /></p>
+                            <p>Instagram: <a href="">@SampleAccountName</a><hr style={{ color: 'grey' }} /></p>
+                            <p>X (Twitter): <a href="">@SampleAccountName</a><hr style={{ color: 'grey' }} /></p>
+                            <p>Facebook: <a href="">@SampleAccountName</a></p>
                         </div>
                     </div>
                     
@@ -40,4 +42,4 @@ const ArtistEvents = () => {
      );
 }
  
-export default ArtistEvents;
+export default ArtistLinks;

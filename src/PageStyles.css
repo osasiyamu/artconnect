@@ -388,6 +388,7 @@ a {
     border-left: 2px solid rgb(255, 255, 255);
     border-top: 2px solid rgb(255, 255, 255);
     padding-top: 20px;
+    padding-right: '-50px';
     overflow-y: auto;
     overflow-x: hidden;
 }
@@ -460,7 +461,7 @@ a {
 
 /*Artist*/
 .artistProfile {
-    margin-left: 3rem;
+    margin-left: 1rem;
     border: 2px solid rgb(221, 221, 221);
     height: 600px;
     width: 300px;
@@ -499,6 +500,7 @@ a {
 .profile.align-content-center .text-center{
     font-family: 'Lobster', cursive;
     font-size: 8rem;
+    margin-left: 100px;
 }
 
 .upload:hover {

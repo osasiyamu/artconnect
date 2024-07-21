@@ -48,6 +48,7 @@ const Artist = () => {
                         <p><a href='/artconnect/artist' className='ms-2 mt-5'>Artist's Name</a> <hr style={{ color: 'grey' }} /></p>
                         <p><a href='/artconnect/artistArts' className="ms-2">Other Arts</a> <hr style={{ color: 'grey' }} /></p>
                         <p><a href='/artconnect/artistEvents' className="ms-2">Events Registered</a> <hr style={{ color: 'grey' }} /></p>
+                        <p><a href='/artconnect/artistLinks' className="ms-2">Contact Links</a> <hr style={{ color: 'grey' }} /></p>
                     </div>
                 </div>
 

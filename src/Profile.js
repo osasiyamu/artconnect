@@ -4,7 +4,7 @@ import UserPost from './components/UserPost';
 const Profile = () => {
     return (
         <div>
-            <div className="d-flex " style={{ marginTop: '100px' }}>
+            <div className="d-flex" style={{ marginTop: '100px' }}>
                 <div className="artistProfile" style={{ backgroundColor: 'lightGrey', border:'2px solid white', borderRadius: '10px'}}>
                     <div className="artistPicture">
                         <img src={profile} alt="Profile" />
