@@ -10,9 +10,6 @@ const CommunityDetails = () => {
                 </div>
 
             </div>
-            {/* <div className="d-flex justify-content-end tutorial">
-                <button className="btn btn-primary tutorial" style={{ paddingLeft: '20px', paddingRight: '20px', marginRight: '60px' }}>Join This Community</button>
-            </div> */}
 
             <hr style={{ color: 'black' }} />
             <h2 style={{marginLeft: '3rem', fontFamily: "'Lobster', cursive", fontSize: '2rem'}}>Description</h2>

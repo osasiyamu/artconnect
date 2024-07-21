@@ -60,10 +60,6 @@ const CommunityFilter = () => {
         });
       };
     
-      const applyFilters = () => {
-        // Logic to apply filters to community listings
-      };
-    
       return (
         <div className="faceted-search-sidebar">
           <div className="facet-category">

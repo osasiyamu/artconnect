@@ -5,12 +5,6 @@ import DiscoverFilter from './components/DiscoverFilter';
 const SearchResult = () => {
     return ( 
         <div className='community'>
-            <div className="fixed-top" style={{ marginTop: 'px', marginLeft: '30px', maxWidth: '94%'}}>
-                <div className='flex-grow-1 SearchFilter'>
-                    {/* <Search page='' action='Search'/> */}
-                </div>
-            </div>
-
             <div className='fixed-top' style={{ display: 'flex', justifyContent: 'flex-end', marginTop: '160px', marginRight: '0px', marginBottom: '10px' }}>
                 <a className="btn btn-primary align-item-end" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample" style={{ marginRight: '20px' }} title="Filter" aria-label="Filter">
                     <i className="bi bi-funnel" aria-hidden="true"></i>

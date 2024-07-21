@@ -55,7 +55,6 @@ const CheckoutPage = () => {
 
     const handlePlaceOrder = () => {
         if (validateInput()) {
-            // Implement order placement logic here
             console.log('Order placed');
         }
     };
@@ -66,7 +65,6 @@ const CheckoutPage = () => {
             <hr style={{color: 'grey', marginTop: '2px'}}></hr>
             <div style={{ borderLeft: '2px solid lightGrey', paddingLeft: '5px', marginBottom: '2rem', boxShadow: '10px' }}>
                 <h3>Order Summary</h3>
-                {/* Display order summary here */}
                 <div className='ms-5'>
                     <p>Art Piece 1 - $100</p>
                     <p>Art Piece 2 - $150</p>

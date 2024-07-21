@@ -57,14 +57,12 @@ const UserSettings = () => {
 
         // If no errors, proceed with form submission
         if (Object.keys(newErrors).length === 0) {
-            // Handle form submission logic here
             window.location = '/artconnect/profile';
         }
     };
 
     return (
         <div>
-            {/* <Navbar /> */}
             <div>
                 <div className="d-flex " style={{ marginTop: '100px' }}>
                     <div className="artistProfile" style={{ backgroundColor: 'lightGrey', border:'2px solid white', borderRadius: '10px'}}>

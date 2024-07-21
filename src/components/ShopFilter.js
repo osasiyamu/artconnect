@@ -60,12 +60,9 @@ const ShopFilter = () => {
       setArtworkFilters(initialFilters);
     };
   
-    const applyFilters = () => {
-      // Implement logic to apply filters
-    };
-  
     return (
       <div className="faceted-search-sidebar">
+        
         {/* Artwork Filters */}
         <div className="facet-category">
           <h4 className="category-title">Artwork</h4>

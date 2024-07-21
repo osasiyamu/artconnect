@@ -1,11 +1,9 @@
 import profile from '../images/profile.jpeg';
 import sunset from '../images/blackart.jpeg';
-import upload from '../images/upload.png'
-import Navbar from '../Navbar';
+import upload from '../images/upload.png';
 const UserUploadArt = () => {
     return ( 
         <div>
-            {/* <Navbar /> */}
             <div>
                 <div className="d-flex " style={{ marginTop: '100px' }}>
                     <div className="artistProfile" style={{ backgroundColor: 'lightGrey', border:'2px solid white', borderRadius: '10px'}}>

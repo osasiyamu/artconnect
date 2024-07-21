@@ -5,7 +5,6 @@ const ShopItemDetails = () => {
             <p style={{ marginLeft: '3rem', marginTop: '80px', color: 'black' }}><a href='/artconnect/shop'>Shop</a> / <a href='/artconnect/shopItemDetails'>Item Details</a></p>
             <div className='row'>
                 <div className='col-4 shopDetails align-content-center' style={{color: 'black', backgroundColor: 'white', border:'3px solid black', borderBottom: '50px solid white', borderRadius: '', height: '60vh', width: '60vh', marginTop: '50px', marginLeft: '60px', paddingTop: '10px'}}>
-                    {/* <h6 className="text-center" style={{color: 'black'}}>Coming Soon</h6> */}
                     <img src={shopArt1} alt="" style={{width: '100%', height: '92%', borderTopLeftRadius: '', borderTopRightRadius: ''}}/>
                     <p style={{fontSize: '1.5rem'}}>Art Name</p>
                 </div>
