@@ -1,6 +1,14 @@
 import React, { useState } from 'react';
 import './Filter.css';
 
+const artists = [
+  "Emily Carr", "Tom Thomson", "Lawren Harris", "A.Y. Jackson", "Arthur Lismer",
+  "Frederick Varley", "J.E.H. MacDonald", "Claude Monet", "Pablo Picasso",
+  "Leonardo da Vinci", "Vincent van Gogh", "Michelangelo", "Rembrandt",
+  "Andy Warhol", "Salvador Dalí", "Frida Kahlo", "Georgia O'Keeffe",
+  "Jackson Pollock", "Henri Matisse", "Edgar Degas"
+];
+
 const DiscoverFilter = () => {
   const initialFilters = {
     medium: 'all',
@@ -25,6 +33,68 @@ const DiscoverFilter = () => {
   };
 
   const [filters, setFilters] = useState(initialFilters);
+
+  const artistsList = [
+    "Emily Carr",
+    "Tom Thomson",
+    "Lawren Harris",
+    "A.Y. Jackson",
+    "Arthur Lismer",
+    "Frederick Varley",
+    "J.E.H. MacDonald",
+    "Claude Monet",
+    "Pablo Picasso",
+    "Leonardo da Vinci",
+    "Vincent van Gogh",
+    "Michelangelo",
+    "Rembrandt",
+    "Andy Warhol",
+    "Salvador Dalí",
+    "Frida Kahlo",
+    "Georgia O'Keeffe",
+    "Jackson Pollock",
+    "Henri Matisse",
+    "Edgar Degas"
+  ]; 
+
+  const locationsList = [
+    "Victoria, British Columbia",
+    "Toronto, Ontario",
+    "Brantford, Ontario",
+    "Montreal, Quebec",
+    "Vancouver, British Columbia",
+    "Calgary, Alberta",
+    "Edmonton, Alberta",
+    "Ottawa, Ontario",
+    "Quebec City, Quebec",
+    "Winnipeg, Manitoba",
+    "Halifax, Nova Scotia",
+    "St. John's, Newfoundland and Labrador",
+    "Regina, Saskatchewan",
+    "Saskatoon, Saskatchewan",
+    "Charlottetown, Prince Edward Island"
+  ];
+
+  const [location, setLocation] = useState("");
+  const [artist, setArtist] = useState("");
+  const [artist1, setArtist1] = useState("");
+  const [artist2, setArtist2] = useState("");
+
+  const handleArtistChange = (event) => {
+    setArtist(event.target.value);
+  }
+
+  const handleArtist1Change = (event) => {
+    setArtist1(event.target.value);
+  }
+
+  const handleArtist2Change = (event) => {
+    setArtist2(event.target.value);
+  }
+
+  const handleLocationChange = (event) => {
+    setLocation(event.target.value);
+  }
 
   const handleInputChange = (event) => {
     const { name, value } = event.target;
@@ -130,7 +200,18 @@ const DiscoverFilter = () => {
 
         <div className="filter-option">
           <label htmlFor="artist">Artist</label>
-          <input type="text" id="artist" name="artist" value={filters.artist} onChange={handleInputChange} placeholder="Artist Name" />
+          <input type="text" id="artist" name="artist" value={artist} onChange={handleArtistChange} placeholder="Artist Name" />
+        </div>
+        <div className='dropdown'>
+          {artistsList.filter(item => {
+            const name = artist.toLowerCase();
+            const allArtistsMatch = item.toLowerCase(); 
+
+            return name && allArtistsMatch.includes(name) && allArtistsMatch !== name;
+          })
+          .map((item) =>(
+            <div onClick={() => setArtist(item)}className='dropdown-row'>{item}</div>
+          ))}
         </div>
 
         <div className="filter-option">
@@ -185,7 +266,18 @@ const DiscoverFilter = () => {
 
         <div className="filter-option">
           <label htmlFor="music-artist">Artist</label>
-          <input type="text" id="music-artist" name="musicArtist" value={filters.musicArtist} onChange={handleInputChange} placeholder="Artist Name" />
+          <input type="text" id="music-artist" name="musicArtist" value={artist1} onChange={handleArtist1Change} placeholder="Artist Name" />
+        </div>
+        <div className='dropdown'>
+          {artistsList.filter(item => {
+            const name = artist1.toLowerCase();
+            const allArtistsMatch = item.toLowerCase(); 
+
+            return name && allArtistsMatch.includes(name) && allArtistsMatch !== name;
+          })
+          .map((item) =>(
+            <div onClick={() => setArtist1(item)}className='dropdown-row'>{item}</div>
+          ))}
         </div>
 
         <div className="filter-option">
@@ -219,7 +311,18 @@ const DiscoverFilter = () => {
         
         <div className="filter-option">
           <label htmlFor="artist-name">Name</label>
-          <input type="text" id="artist-name" name="artistName" value={filters.artistName} onChange={handleInputChange} placeholder="Artist Name" />
+          <input type="text" id="artist-name" name="artistName" value={artist2} onChange={handleArtist2Change} placeholder="Artist Name" />
+        </div>
+        <div className='dropdown'>
+          {artistsList.filter(item => {
+            const name = artist2.toLowerCase();
+            const allArtistsMatch = item.toLowerCase(); 
+
+            return name && allArtistsMatch.includes(name) && allArtistsMatch !== name;
+          })
+          .map((item) =>(
+            <div onClick={() => setArtist2(item)}className='dropdown-row'>{item}</div>
+          ))}
         </div>
 
         <div className="filter-option">
@@ -260,7 +363,7 @@ const DiscoverFilter = () => {
 
         <div className="filter-option">
           <label htmlFor="artist-popularity">Popularity</label>
-          <input type="number" id="artist-popularity" name="artistPopularity" value={filters.artistPopularity} onChange={handleInputChange} placeholder="Min. Likes" />
+          <input type="number" id="artist-popularity" name="artistPopularity" min='0' value={filters.artistPopularity} onChange={handleInputChange} placeholder="Min. Likes" />
         </div>
       </div>
 
@@ -275,7 +378,18 @@ const DiscoverFilter = () => {
 
         <div className="filter-option">
           <label htmlFor="event-location">Location</label>
-          <input type="text" id="event-location" name="eventLocation" value={filters.eventLocation} onChange={handleInputChange} placeholder="Location" />
+          <input type="text" id="event-location" name="eventLocation" value={location} onChange={handleLocationChange} placeholder="Location" />
+        </div>
+        <div className='dropdown'>
+          {locationsList.filter(item => {
+            const name = location.toLowerCase();
+            const allLocationsMatch = item.toLowerCase(); 
+
+            return name && allLocationsMatch.includes(name) && allLocationsMatch !== name;
+          })
+          .map((item) =>(
+            <div onClick={() => setLocation(item)}className='dropdown-row'>{item}</div>
+          ))}
         </div>
 
         <div className="filter-option">
@@ -330,14 +444,14 @@ const DiscoverFilter = () => {
 
         <div className="filter-option">
           <label htmlFor="post-popularity">Popularity</label>
-          <input type="number" id="post-popularity" name="postPopularity" value={filters.postPopularity} onChange={handleInputChange} placeholder="Min. Likes" />
+          <input type="number" id="post-popularity" name="postPopularity" min='0' value={filters.postPopularity} onChange={handleInputChange} placeholder="Min. Likes" />
         </div>
       </div>
 
       {/* Search Button */}
       <div className="d-flex justify-content-end">
         <button className="btn btn-primary search" onClick={resetFilters}>Reset</button>
-        <button className="btn btn-primary search" onClick={handleSubmit}>Search</button>
+        <button className="btn btn-primary search" onClick={() => {window.location = '/artconnect/searchResult'}}>Search</button>
       </div>
     </div>
   );

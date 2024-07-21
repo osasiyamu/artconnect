@@ -1,5 +1,6 @@
 import profile from '../images/profile.jpeg';
 import sunset from '../images/blackart.jpeg';
+import upload from '../images/upload.png'
 import Navbar from '../Navbar';
 const UserUploadArt = () => {
     return ( 
@@ -16,12 +17,11 @@ const UserUploadArt = () => {
                             <p><a href='/artconnect/userArts' className="ms-2">My Arts</a> <hr style={{ color: 'grey' }} /></p>
                             <p><a href='/artconnect/userEvents' className="ms-2">My Events</a> <hr style={{ color: 'grey' }} /></p>
                             <p><a href='/artconnect/userUploadArt' className="ms-2">Upload Art</a> <hr style={{ color: 'grey' }} /></p>
-                            <p><a href='/artconnect/profile' className="ms-2">Settings</a></p>
+                            <p><a href='/artconnect/userSettings' className="ms-2">Settings</a></p>
                         </div>
                     </div>
 
                     <div className='profile' style={{border:'2px solid white', borderRadius: '10px', height: '80vh', width: '80vw'}}>
-                        {/* <h6 className="text-center" style={{color: 'black'}}>Coming Soon</h6> */}
                         <div style={{border:'2px solid white', borderRadius: '10px', height: '32vh', width: '100%', marginBottom: '10px', alignContent: 'center', borderTopLeftRadius: '10px', borderTopRightRadius: '10px'}}>
                             <img src={sunset} alt='Profile background' style={{height: '100%', width: '100%', borderTopLeftRadius: '10px', borderTopRightRadius: '10px'}}/>
                         </div>
@@ -29,11 +29,17 @@ const UserUploadArt = () => {
                         <div className='ms-3' >
                             <h6 style={{color: 'black', fontSize: '2.0rem', fontFamily: "'Lobster', cursive"}}>Upload Art</h6>
                             <hr style={{color: 'black', marginBottom: '5px'}}></hr>
-                            <div style={{height: '38vh', overflowY: 'auto'}}>
-                                
-                                <div className='text-end align-content-end me-4'>
+                            <div className='row' style={{height: '38vh', overflowY: 'hidden', borderLeft: '1px solid lightGrey', borderBottom: '1px solid lightGrey', marginRight: '20px', marginLeft: '2px'}}>
+                                {/* <div className='text-center ' style={{height: '50vh', overflowY: 'hidden'}}> */}
+                                    <p className='col-11' style={{height: '38vh'}}><img src={upload} alt='upload' className = 'upload' style={{height: '100%', width: '70%'}}></img></p>
+                                    <div className='col-1' style={{marginLeft: '-300px'}}>
+                                        <p><a href='/artconnect/profile' style={{color: 'purple'}}>Filename.jpg</a></p>
+                                        <button className='btn btn-primary search' style={{marginTop: '25vh', width: '150px'}} onClick={() => {window.location = '/artconnect/profile'}}>Upload Art</button>
+                                    </div>
+                                {/* </div> */}
+                                {/* <div className='text-end align-content-end me-4 mb-4'>
                                     <button className='btn btn-primary search'>Upload Art</button>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                         

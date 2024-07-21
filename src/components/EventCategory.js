@@ -46,7 +46,7 @@ const EventCategory = (props) => {
                                 <div className="" style={{ width: '18rem', marginRight: '2rem' }}>
                                     <div className="art">
                                         <img src={contemporaryArt5} alt="" />
-                                        <div className="align-items-center"><a href="/artconnect/art"> {props.category} Art Details</a></div>
+                                        <div className="align-items-center"><a href="/artconnect/art"> {props.category} Details</a></div>
                                     </div>
                                 </div>
                             </div>

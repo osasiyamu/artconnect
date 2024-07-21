@@ -13,7 +13,7 @@ const ArtCategory = (props) => {
                 <div className="row">
                     <div className="col">
                         <div className="testimonials" style={{ maxWidth: '100%' }}>
-                            <div className="d-flex ms-2 me-3 content" style={{}}>
+                            <div className="d-flex ms-2 me-3 content" style={{}} aria-hidden="true">
                                 <div className="" style={{ width: '18rem', marginRight: '2rem' }}>
                                     <div className="art">
                                         <img src={contemporaryArt1} alt="" />

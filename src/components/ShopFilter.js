@@ -9,8 +9,36 @@ const ShopFilter = () => {
       size: 'all',
       artist: ''
     };
+
+    const artistsList = [
+      "Emily Carr",
+      "Tom Thomson",
+      "Lawren Harris",
+      "A.Y. Jackson",
+      "Arthur Lismer",
+      "Frederick Varley",
+      "J.E.H. MacDonald",
+      "Claude Monet",
+      "Pablo Picasso",
+      "Leonardo da Vinci",
+      "Vincent van Gogh",
+      "Michelangelo",
+      "Rembrandt",
+      "Andy Warhol",
+      "Salvador Dalí",
+      "Frida Kahlo",
+      "Georgia O'Keeffe",
+      "Jackson Pollock",
+      "Henri Matisse",
+      "Edgar Degas"
+    ]; 
   
     const [artworkFilters, setArtworkFilters] = useState(initialFilters);
+    const [artist, setArtist] = useState("");
+
+    const handleArtistChange = (event) => {
+      setArtist(event.target.value);
+    }
   
     const handleArtworkInputChange = (event) => {
       const { name, value } = event.target;
@@ -114,13 +142,24 @@ const ShopFilter = () => {
   
           <div className="filter-option">
             <label>Artist</label>
-            <input type="text" id="artist" name="artist" value={artworkFilters.artist} onChange={handleArtworkInputChange} placeholder="Artist Name" />
+            <input type="text" id="artist" name="artist" value={artist} onChange={handleArtistChange} placeholder="Artist Name" />
+          </div>
+          <div className='dropdown'>
+            {artistsList.filter(item => {
+              const name = artist.toLowerCase();
+              const allArtistsMatch = item.toLowerCase(); 
+
+              return name && allArtistsMatch.includes(name) && allArtistsMatch !== name;
+            })
+            .map((item) =>(
+              <div onClick={() => setArtist(item)}className='dropdown-row'>{item}</div>
+            ))}
           </div>
         </div>
   
         <div className='d-flex justify-content-end'>
           <button className='btn btn-primary search' onClick={resetFilters}>Reset</button>
-          <button className='btn btn-primary search'>Search</button>
+          <button className='btn btn-primary search' onclick={() => {window.location = '/artconnect/searchResult'}}>Search</button>
         </div>
       </div>
     );

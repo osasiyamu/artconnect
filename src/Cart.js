@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import shopArt1 from './images/shopArt1.jpeg';
 import './PageStyles.css';
 
 const initialCartItems = [
@@ -22,42 +23,45 @@ const Cart = () => {
     };
 
     const getTotalCost = () => {
-        return cartItems.reduce((total, item) => total + item.price * item.quantity, 0);
+        return cartItems.reduce((total, item) => 20 + total + item.price * item.quantity, 0);
     };
 
     return (
-        <div className="container cart-page">
-        <h1>Your Cart</h1>
-        <div className="row cart-items">
-            {cartItems.map(item => (
-            <div key={item.id} className="col-md-4 cart-item">
-                <div className="card">
-                <div className="card-body">
-                    <h5 className="card-title">{item.name}</h5>
-                    <p className="card-text">${item.price}</p>
-                    <div className="quantity-input">
-                    <label htmlFor={`quantity-${item.id}`}>Quantity</label>
-                    <input
-                        type="number"
-                        id={`quantity-${item.id}`}
-                        min="1"
-                        value={item.quantity}
-                        onChange={e => handleQuantityChange(item.id, e.target.value)}
-                    />
+        <div className="container cart-page" style={{marginTop: '80px', marginLeft: '80px'}}>
+            <h1 style={{color: 'black', fontSize: '2.5rem', fontFamily: "'Lobster', cursive", marginLeft: '-50px'}}>Your Cart</h1>
+            <hr style={{marginLeft: '-50px', marginRight: '-100%', color: 'grey'}}></hr>
+            <div className='row' style={{border: '2px solid black', width: '85vw', paddingTop: '20px', borderRight: 'none'}}>
+                <div className="col">
+                    {cartItems.map(item => (
+                    <div key={item.id} className="cart-item" style={{width: '400px', marginLeft: '-30px', border: '2px solid black'}}>
+                        <div className="card">
+                        <div className="card-body">
+                            <div style={{}}>
+                                <img src={shopArt1} alt="item" style={{width: '100%', height: '100%'}}/>
+                            </div>
+                            <h5 className="card-title mt-2">{item.name}</h5>
+                            <p className="card-text">${item.price}</p>
+                            <div className="quantity-input">
+                                <label htmlFor={`quantity-${item.id}`}>Quantity</label>
+                                <input type="number" id={`quantity-${item.id}`} min="1" value={item.quantity} onChange={e => handleQuantityChange(item.id, e.target.value)}/>
+                            </div>
+                            <button className="btn btn-primary search" onClick={() => handleRemoveItem(item.id)}>Remove</button>
+                        </div>
+                        </div>
                     </div>
-                    <button className="btn btn-danger" onClick={() => handleRemoveItem(item.id)}>Remove</button>
+                    ))}
                 </div>
+                <div className='col' style={{marginLeft: '100px', color: 'black', marginTop: '100px', marginLeft: '500px'}}>
+                    <div className="cart-summary">
+                        <h2>Service Fee: $20</h2>
+                        <h2>Total: ${getTotalCost()}</h2>
+                        <div className="cart-actions">
+                        <button className="btn btn-primary search" onClick={() => window.location.href = '/artconnect/shop'}>Continue Shopping</button>
+                        <button className="btn btn-primary search" onClick={() => window.location.href = '/checkoutPage'}>Proceed to Checkout</button>
+                        </div>
+                    </div>
                 </div>
             </div>
-            ))}
-        </div>
-        <div className="cart-summary">
-            <h2>Total: ${getTotalCost()}</h2>
-            <div className="cart-actions">
-            <button className="btn btn-secondary" onClick={() => window.location.href = '/shop'}>Continue Shopping</button>
-            <button className="btn btn-primary search" onClick={() => window.location.href = '/checkout'}>Proceed to Checkout</button>
-            </div>
-        </div>
         </div>
     );
 }

@@ -277,7 +277,7 @@ a {
 .discover {
     margin-top: 125px;
     height: 85vh;
-    max-width: 92vw;
+    max-width: 90.5vw;
     border-top-left-radius: 20px;
     background-color: rgb(227, 227, 227);
     border-left: 2px solid rgb(255, 255, 255);
@@ -382,7 +382,7 @@ a {
 .community {
     margin-top: 125px;
     height: 85vh;
-    max-width: 92vw;
+    max-width: 90.5vw;
     border-top-left-radius: 20px;
     background-color: rgb(227, 227, 227);
     border-left: 2px solid rgb(255, 255, 255);
@@ -397,7 +397,7 @@ a {
 .shop {
     margin-top: 125px;
     height: 85vh;
-    max-width: 92vw;
+    max-width: 90.5vw;
     border-top-left-radius: 20px;
     background-color: rgb(227, 227, 227);
     border-left: 2px solid rgb(255, 255, 255);
@@ -416,7 +416,7 @@ a {
 .specificArt {
     margin-left: 3rem;
     background-color: #757575;
-    border: 2px solid rgb(141, 141, 141);
+    border: 3px solid rgb(255, 255, 255);
     height: 600px;
     width: 500px;
 }
@@ -429,16 +429,16 @@ a {
 .details {
     margin-left: 1rem;
     margin-right: 1rem;
-    background-color: rgb(252, 252, 252);
-    border: 2px solid rgb(247, 247, 247);
-    border-right: none;
+    /* background-color: rgb(252, 252, 252); */
+    border: 3px solid rgb(247, 247, 247);
     height: 600px;
     width: 62vw;
 }
 
-.d-flex.justify-content-end.tutorial {
+.d-flex.justify-content-end.tutorial, .d-flex.justify-content-between.tutorial {
     margin-top: 10px;
     margin-right: 80px;
+    margin-left: 560px;
 }
 
 .btn.btn-primary.tutorial:hover {
@@ -501,9 +501,14 @@ a {
     font-size: 8rem;
 }
 
+.upload:hover {
+    height: 60%;
+    width: 60%;
+}
+
 /*Cart*/
 .container.cart-page {
-    padding: 20px;
+    padding: 10px;
   }
   
   .cart-items {
@@ -516,13 +521,14 @@ a {
   
   .card {
     background-color: #f8f8f8;
-    border-radius: 10px;
+    border-radius: 0px;
   }
   
   .card-body {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    padding: 10px;
+    align-items: left;
   }
   
   .quantity-input {
@@ -558,18 +564,28 @@ a {
   }
   
   .cart-actions .btn-primary {
-    background-color: #007bff;
+    background-color: #000000;
+    color: white;
+  }
+  
+ 
+
+  .cart-actions .btn-danger {
+    background-color: #292929;
     color: white;
   }
   
   .cart-actions .btn-danger {
-    background-color: #dc3545;
+    background-color: #292929;
     color: white;
   }
-  
+
   .cart-actions .btn-secondary:hover,
   .cart-actions .btn-primary:hover,
   .cart-actions .btn-danger:hover {
     opacity: 0.8;
+  }
+  .form-control{
+    width: 800px;
   }
   

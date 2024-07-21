@@ -27,7 +27,7 @@ const Art = () => {
                 </div>
             </div>
             <div className="d-flex justify-content-end tutorial">
-                <button className="btn btn-primary tutorial">Tutorial</button>
+                <button className="btn btn-primary tutorial"><a href='/artconnect/tutorial' style={{color: 'white', textDecoration: 'none'}}>Tutorial</a></button>
             </div>
 
         </div>

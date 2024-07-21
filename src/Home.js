@@ -28,7 +28,7 @@ const Home = () => {
                 </div>
             </div>
             <div className="d-flex justify-content-center align-items-center">
-                <button className='btn btn-primary explore'>Explore More Diverse Art</button>
+                <button className='btn btn-primary explore' onClick={() => {window.location = '/artconnect/explore'}}>Explore More Diverse Art</button>
             </div>
         </div>
     );

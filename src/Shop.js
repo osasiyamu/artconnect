@@ -7,14 +7,9 @@ const Shop = () => {
     return (
         <div className='shop'>
             <div className="fixed-top" style={{ marginTop: '105px', marginLeft: '30px', maxWidth: '94%'}}>
-                {/* <div className='d-flex justify-content-between align-items-center mt-3' style={{ marginLeft: '1rem', marginTop: '100px', marginBottom: '30px' }}> */}
-                    <div className='flex-grow-1 SearchFilter'>
-                        <Search page='Shop' action='Search'/>
-                    </div>
-                    {/* <a className="btn btn-primary align-item-end" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample" style={{ marginRight: '20px' }}>
-                        <i className="bi bi-funnel"></i>
-                    </a> */}
-                {/* </div> */}
+                <div className='flex-grow-1 SearchFilter'>
+                    <Search page='Shop' action='Search'/>
+                </div>
             </div>
             <div className='fixed-top' style={{ display: 'flex', justifyContent: 'flex-end', marginTop: '160px', marginRight: '0px', marginBottom: '10px' }}>
                 <a className="btn btn-primary align-item-end" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample" style={{ marginRight: '20px' }} title='Filter'>

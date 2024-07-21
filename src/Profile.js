@@ -14,12 +14,11 @@ const Profile = () => {
                         <p><a href='/artconnect/userArts' className="ms-2">My Arts</a> <hr style={{ color: 'grey' }} /></p>
                         <p><a href='/artconnect/userEvents' className="ms-2">My Events</a> <hr style={{ color: 'grey' }} /></p>
                         <p><a href='/artconnect/userUploadArt' className="ms-2">Upload Art</a> <hr style={{ color: 'grey' }} /></p>
-                        <p><a href='/artconnect/profile' className="ms-2">Settings</a></p>
+                        <p><a href='/artconnect/userSettings' className="ms-2">Settings</a></p>
                     </div>
                 </div>
 
                 <div className='profile' style={{border:'2px solid white', borderRadius: '10px', height: '80vh', width: '80vw'}}>
-                    {/* <h6 className="text-center" style={{color: 'black'}}>Coming Soon</h6> */}
                     <div style={{border:'2px solid white', borderRadius: '10px', height: '32vh', width: '100%', marginBottom: '10px', alignContent: 'center', borderTopLeftRadius: '10px', borderTopRightRadius: '10px'}}>
                         <img src={sunset} alt='Profile background' style={{height: '100%', width: '100%', borderTopLeftRadius: '10px', borderTopRightRadius: '10px'}}/>
                     </div>

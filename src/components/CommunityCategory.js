@@ -45,7 +45,7 @@ const CommunityCategory = (props) => {
                                 <div className="" style={{ width: '18rem', marginRight: '2rem' }}>
                                     <div className="art">
                                         <img src={artEvent5} alt="" />
-                                        <div className="text-center align-items-center"><a href="/artconnect/communityDetails"> {props.category} Art Details</a></div>
+                                        <div className="text-center align-items-center"><a href="/artconnect/communityDetails"> {props.category} Details</a></div>
                                     </div>
                                 </div>
                             </div>

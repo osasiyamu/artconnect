@@ -78,12 +78,10 @@ const FrenchDiscoverFilter = () => {
       };
       
       const handleSubmit = () => {
-        // Implement logic to apply filters
       };
       
       return (
         <div className="faceted-search-sidebar">
-          {/* Filtres des œuvres d'art */}
           <div className="facet-category">
             <h4 className="category-title">Œuvres d'art</h4>
             

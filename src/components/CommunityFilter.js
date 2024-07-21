@@ -1,6 +1,31 @@
 import React, { useState } from 'react';
 import './Filter.css';
 const CommunityFilter = () => {
+
+    const locationsList = [
+      "Victoria, British Columbia",
+      "Toronto, Ontario",
+      "Brantford, Ontario",
+      "Montreal, Quebec",
+      "Vancouver, British Columbia",
+      "Calgary, Alberta",
+      "Edmonton, Alberta",
+      "Ottawa, Ontario",
+      "Quebec City, Quebec",
+      "Winnipeg, Manitoba",
+      "Halifax, Nova Scotia",
+      "St. John's, Newfoundland and Labrador",
+      "Regina, Saskatchewan",
+      "Saskatoon, Saskatchewan",
+      "Charlottetown, Prince Edward Island"
+    ];
+
+    const [location, setLocation] = useState("");
+
+    const handleLocationChange = (event) => {
+      setLocation(event.target.value);
+    }
+
     const [filters, setFilters] = useState({
         communityType: 'all',
         location: '',
@@ -66,9 +91,21 @@ const CommunityFilter = () => {
             
             <div className="filter-option">
               <label htmlFor="community-location">Location</label>
-              <input type="text" id="community-location" name="location" value={filters.location} onChange={handleInputChange} placeholder="City, State, or Country" />
+              <input type="text" id="community-location" name="location" value={location} onChange={handleLocationChange} placeholder="City, State, or Country" />
             </div>
             
+            <div className='dropdown'>
+              {locationsList.filter(item => {
+                const name = location.toLowerCase();
+                const allLocationsMatch = item.toLowerCase(); 
+
+                return name && allLocationsMatch.includes(name) && allLocationsMatch !== name;
+              })
+              .map((item) =>(
+                <div onClick={() => setLocation(item)}className='dropdown-row'>{item}</div>
+              ))}
+            </div>
+
             <div className="filter-option">
               <label>Community Size</label>
               <div className="option">
@@ -117,7 +154,7 @@ const CommunityFilter = () => {
           
           <div className='d-flex justify-content-end'>
             <button className='btn btn-primary search' onClick={resetFilters}>Reset</button>
-            <button className='btn btn-primary search' onClick={applyFilters}>Search</button>
+            <button className='btn btn-primary search' onClick={() => {window.location = '/artconnect/searchResult'}}>Search</button>
           </div>
         </div>  
      );
