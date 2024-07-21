@@ -26,10 +26,10 @@ const ArtistLinks = () => {
                         <h6 style={{color: 'black', fontSize: '2.0rem', fontFamily: "'Lobster', cursive"}}>Links</h6>
                         <hr style={{color: 'black', marginBottom: '5px'}}></hr>
                         <div style={{color: 'black', paddingLeft: '10px', paddingTop: '20px', height: '38.5vh', width: '80vw', overflowY: 'hidden', overflowX: 'hidden'}}>
-                            <p>Email: <a href="">sampleEmail@gmail.com</a><hr style={{ color: 'grey' }} /></p>
-                            <p>Instagram: <a href="">@SampleAccountName</a><hr style={{ color: 'grey' }} /></p>
-                            <p>X (Twitter): <a href="">@SampleAccountName</a><hr style={{ color: 'grey' }} /></p>
-                            <p>Facebook: <a href="">@SampleAccountName</a></p>
+                            <p>Email: <a href=" ">sampleEmail@gmail.com</a><hr style={{ color: 'grey' }} /></p>
+                            <p>Instagram: <a href=" ">@SampleAccountName</a><hr style={{ color: 'grey' }} /></p>
+                            <p>X (Twitter): <a href=" ">@SampleAccountName</a><hr style={{ color: 'grey' }} /></p>
+                            <p>Facebook: <a href=" ">@SampleAccountName</a></p>
                         </div>
                     </div>
                     

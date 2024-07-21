@@ -1,5 +1,4 @@
 import artist from './images/artist.webp';
-import profile from './images/profile.jpeg';
 import abstract from './images/abstract.jpeg';
 import UserPost from './components/UserPost';
 const Artist = () => {

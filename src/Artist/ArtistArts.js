@@ -1,7 +1,6 @@
 import artist from '../images/artist.webp';
 import abstract from '../images/abstract.jpeg';
 import ArtCategory from '../components/ArtCategory';
-import Navbar from '../Navbar';
 const ArtistArt = () => {
     return ( 
         <div>

@@ -51,7 +51,7 @@ const Cart = () => {
                     </div>
                     ))}
                 </div>
-                <div className='col' style={{marginLeft: '100px', color: 'black', marginTop: '100px', marginLeft: '500px'}}>
+                <div className='col' style={{color: 'black', marginTop: '100px'}}>
                     <div className="cart-summary">
                         <h2>Service Fee: $20</h2>
                         <h2>Total: ${getTotalCost()}</h2>

@@ -1,5 +1,3 @@
-import { Button } from "bootstrap/dist/js/bootstrap.bundle.min";
-
 const Error = () => {
     return ( 
         <div style={{marginTop: '70px', alignContent: 'center', textAlign: 'center', border: '3px solid black', borderRadius: '10px', padding: '5px'}}>

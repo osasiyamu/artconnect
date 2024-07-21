@@ -28,16 +28,27 @@ const UserUploadArt = () => {
                             <h6 style={{color: 'black', fontSize: '2.0rem', fontFamily: "'Lobster', cursive"}}>Upload Art</h6>
                             <hr style={{color: 'black', marginBottom: '5px'}}></hr>
                             <div className='row' style={{height: '38vh', overflowY: 'hidden', borderLeft: '1px solid lightGrey', borderBottom: '1px solid lightGrey', marginRight: '20px', marginLeft: '2px'}}>
-                                {/* <div className='text-center ' style={{height: '50vh', overflowY: 'hidden'}}> */}
                                     <p className='col-11' style={{height: '38vh'}}><img src={upload} alt='upload' className = 'upload' style={{height: '100%', width: '70%'}}></img></p>
                                     <div className='col-1' style={{marginLeft: '-300px'}}>
                                         <p><a href='/artconnect/profile' style={{color: 'purple'}}>Filename.jpg</a></p>
-                                        <button className='btn btn-primary search' style={{marginTop: '25vh', width: '150px'}} onClick={() => {window.location = '/artconnect/profile'}}>Upload Art</button>
+                                        <button className='btn btn-primary search' data-toggle="modal" data-target=".bd-example-modal-lg" style={{marginTop: '25vh', width: '150px'}}>Upload Art</button>
+                                        <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-lg" style={{color: 'black'}}>
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLongTitle">Upload Successful!</h5>
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body text-center" style={{color: 'black'}}>
+                                                        <h2>View your arts?</h2>
+                                                        <button className='btn btn-primary search' onClick={() => {window.location = '/artconnect/userArts'}}>My Arts</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                {/* </div> */}
-                                {/* <div className='text-end align-content-end me-4 mb-4'>
-                                    <button className='btn btn-primary search'>Upload Art</button>
-                                </div> */}
                             </div>
                         </div>
                         

@@ -1,14 +1,6 @@
 import React, { useState } from 'react';
 import './Filter.css';
 
-const artists = [
-  "Emily Carr", "Tom Thomson", "Lawren Harris", "A.Y. Jackson", "Arthur Lismer",
-  "Frederick Varley", "J.E.H. MacDonald", "Claude Monet", "Pablo Picasso",
-  "Leonardo da Vinci", "Vincent van Gogh", "Michelangelo", "Rembrandt",
-  "Andy Warhol", "Salvador Dalí", "Frida Kahlo", "Georgia O'Keeffe",
-  "Jackson Pollock", "Henri Matisse", "Edgar Degas"
-];
-
 const DiscoverFilter = () => {
   const initialFilters = {
     medium: 'all',
@@ -149,7 +141,7 @@ const DiscoverFilter = () => {
 
   return (
     <div className="faceted-search-sidebar">
-      
+
       {/* Artwork Filters */}
       <div className="facet-category">
         <h4 className="category-title">Artwork</h4>

@@ -1,6 +1,5 @@
 import React from 'react';
 import CommunityCategory from './components/CommunityCategory'
-import Search from './components/Search'
 import DiscoverFilter from './components/DiscoverFilter';
 const SearchResult = () => {
     return ( 
