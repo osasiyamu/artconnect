@@ -26,7 +26,7 @@ const ArtistEvents = () => {
                     <div className='ms-3' >
                         <h6 style={{color: 'black', fontSize: '2.0rem', fontFamily: "'Lobster', cursive"}}>Events</h6>
                         <hr style={{color: 'black', marginBottom: '5px'}}></hr>
-                        <div style={{marginLeft: '-50px', marginTop: '-20px', height: '38.5vh', width: '80vw', overflowY: 'hidden', overflowX: 'hidden'}}>
+                        <div style={{marginLeft: '-50px', marginTop: '-30px', height: '42vh', width: '80vw', overflowY: 'hidden', overflowX: 'hidden'}}>
                             <EventCategory details='Details'/>
                         </div>
                     </div>

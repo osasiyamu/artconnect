@@ -23,7 +23,7 @@ const SearchResult = () => {
             </div>
 
             <div style={{ marginTop: '20px', marginBottom: '40px', padding: '20px' }}>
-                <h2 style={{ color: 'black', textAlign: 'center', fontFamily: "'Lobster', cursive", fontSize: '2.5rem' }}>Search Result for User's Input/Filter search</h2>
+                <h2 style={{ color: 'black', textAlign: 'center', fontFamily: "'Lobster', cursive", fontSize: '2.5rem' }}>Search Results for User's Input/Filter search</h2>
                 <CommunityCategory category="Search Result" />
                 <CommunityCategory category="Search Result" />
                 <CommunityCategory category="Search Result" />

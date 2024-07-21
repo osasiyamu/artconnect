@@ -62,7 +62,7 @@ const ShopFilter = () => {
   
     return (
       <div className="faceted-search-sidebar">
-        
+
         {/* Artwork Filters */}
         <div className="facet-category">
           <h4 className="category-title">Artwork</h4>
@@ -156,7 +156,7 @@ const ShopFilter = () => {
   
         <div className='d-flex justify-content-end'>
           <button className='btn btn-primary search' onClick={resetFilters}>Reset</button>
-          <button className='btn btn-primary search' onclick={() => {window.location = '/artconnect/searchResult'}}>Search</button>
+          <button className='btn btn-primary search' onClick={() => {window.location = '/artconnect/searchResult'}}>Search</button>
         </div>
       </div>
     );

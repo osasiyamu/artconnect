@@ -57,7 +57,7 @@ const Cart = () => {
                         <h2>Total: ${getTotalCost()}</h2>
                         <div className="cart-actions">
                         <button className="btn btn-primary search" onClick={() => window.location.href = '/artconnect/shop'}>Continue Shopping</button>
-                        <button className="btn btn-primary search" onClick={() => window.location.href = '/checkoutPage'}>Proceed to Checkout</button>
+                        <button className="btn btn-primary search" onClick={() => window.location.href = '/artconnect/checkoutPage'}>Proceed to Checkout</button>
                         </div>
                     </div>
                 </div>
